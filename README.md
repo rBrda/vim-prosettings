@@ -2,6 +2,8 @@
 
 A plugin to discover and load project specific Vim settings.
 
+Note: I personally use Neovim and developed the plugin in that, so I haven't tested in Vim.
+
 ## Usage
 
 The plugin doesn't require configuration and works automatically.
@@ -78,7 +80,7 @@ The plugin has the `PSReloadSettings` command for reloading the project specific
 
 ## Why was this n+1 plugin created?
 
-I recently started to use Vim for my work and I immediately ran into a problem. There were several projects that use different settings like for instance tabs instead of spaces, debugger settings (vdebug), filetype specific configuration. So I created separate `.vimrc` files for each and stored these settings in the root directory of the projects. I'm still not sure if this was the right decision, but it seems to work for me.
+I recently started to use Vim (Neovim) for my work and I immediately ran into a problem. There were several projects that use different settings like for instance tabs instead of spaces, debugger settings (vdebug), filetype specific configuration. So I created separate `.vimrc` files for each and stored these settings in the root directory of the projects. I'm still not sure if this was the right decision, but it seems to work for me.
 
 However, I found the manual sourcing of these files cumbersome (sometimes I even forget to do it) and decided to semi-automatize the process. So I looked first for already existing plugins that could help me to solve the this issue, but I didn't find any that would fit my needs... So I decided to put together one, that does what I want and nothing more.
 
